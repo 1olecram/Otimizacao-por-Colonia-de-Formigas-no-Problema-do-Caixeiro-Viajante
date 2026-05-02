@@ -84,7 +84,7 @@ def percorre_distancias():
     Lê a matriz de distâncias a partir do arquivo CSV usando o módulo padrão.
     """
     matriz = []
-    with open('distancia_matrix.csv', 'r') as arquivo:
+    with open('assets/distancia_matrix.csv', 'r') as arquivo:
         leitor = csv.reader(arquivo)
         for linha in leitor:
             if any(linha): # Verifica se a linha não está vazia

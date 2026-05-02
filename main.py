@@ -82,8 +82,8 @@ def main():
     plt.grid(True, which='both', linestyle='--', alpha=0.7)
     
     # Salva e mostra o gráfico
-    plt.savefig('grafico_convergencia.png', dpi=300, bbox_inches='tight')
-    print("Gráfico salvo como 'grafico_convergencia.png'.")
+    plt.savefig('assets/grafico_convergencia.png', dpi=300, bbox_inches='tight')
+    print("Gráfico salvo como 'assets/grafico_convergencia.png'.")
     try:
         plt.show()
     except Exception as e:
