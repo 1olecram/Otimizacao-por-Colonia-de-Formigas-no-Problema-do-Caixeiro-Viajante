@@ -1,6 +1,8 @@
 import aco
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
+import copy
+import visualizacao
 
 def main():
     # Carrega a matriz de distâncias
@@ -17,6 +19,7 @@ def main():
     max_iteracoes = 2000
     iteracao_convergencia = 0
     historico_distancias = [] # Guarda a melhor distância ao fim de cada iteração
+    historico_matrizes_feromonio = [] # Guarda os quadros para animação
     
     print("Iniciando otimização com colônia de formigas...")
     for iteracao in range(max_iteracoes):
@@ -52,6 +55,10 @@ def main():
             
         # Registra a distância da melhor rota para plotagem no gráfico
         historico_distancias.append(menor_distancia_global)
+        
+        # Registra a matriz de feromônios a cada 10 iterações para a animação
+        if iteracao % 10 == 0:
+            historico_matrizes_feromonio.append(copy.deepcopy(matriz_feromonio))
             
     # Exibe a melhor rota global ao final
     melhor_rota_exibicao = [cidade + 1 for cidade in melhor_rota_global]
@@ -81,9 +88,13 @@ def main():
     
     plt.grid(True, which='both', linestyle='--', alpha=0.7)
     
-    # Salva e mostra o gráfico
+    # Salva o gráfico
     plt.savefig('assets/grafico_convergencia.png', dpi=300, bbox_inches='tight')
     print("Gráfico salvo como 'assets/grafico_convergencia.png'.")
+    
+    # Gera a animação das arestas baseadas em feromônios
+    visualizacao.gerar_animacao_feromonios(historico_matrizes_feromonio, qtd_formigas, 'assets/animacao_feromonios.gif')
+    
     try:
         plt.show()
     except Exception as e:
