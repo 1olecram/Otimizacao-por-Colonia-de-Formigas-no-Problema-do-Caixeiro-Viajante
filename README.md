@@ -5,3 +5,8 @@ implementar e analisar o comportamento do algoritmo de Otimização por Colônia
 ## Gráfico de Convergência
 
 ![Gráfico de Convergência](/assets/grafico_convergencia.png "Gráfico de Convergência")
+
+## Animação da concentração de feromônio ao longo do algoritmo
+
+![Animação da concentração de feromônio ao longo do algoritmo](/assets/animacao_feromonios.gif "Animação da concentração de feromônio ao longo do algoritmo")
+
