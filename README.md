@@ -19,5 +19,5 @@ Implementção e análise do comportamento do algoritmo de Otimização por Col�
 
 ## Gráficos - Análise da Taxa de Evaporação
 
-![Gráfico Taxa de Evaporação x Média de Distância](/assets/Parte2_Populacao_A_distancia.png "Gráfico Taxa de Evaporação x Média de Distância")
-![Gráfico Taxa de Evaporação x Média de Iterações](/assets/Parte2_Populacao_B_iteracoes.png "Gráfico Taxa de Evaporação x Taxa de Evaporação até convergência")
+![Gráfico Taxa de Evaporação x Média de Distância](/assets/Parte3_Evaporacao_A_distancia.png "Gráfico Taxa de Evaporação x Média de Distância")
+![Gráfico Taxa de Evaporação x Média de Iterações](/assets/Parte3_Evaporacao_B_iteracoes.png "Gráfico Taxa de Evaporação x Taxa de Evaporação até convergência")
