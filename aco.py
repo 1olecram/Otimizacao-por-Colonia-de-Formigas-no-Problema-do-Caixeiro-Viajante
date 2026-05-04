@@ -77,8 +77,7 @@ def constroi_rota(cidade_inicial, matriz_distancias, matriz_feromonio, alfa=1.0,
         rota.append(proxima_cidade)
         cidades_visitadas.add(proxima_cidade)
     
-    rota.append(cidade_inicial)
-
+    rota.append(cidade_inicial) # para retornar ao início do percurso
     
     return rota
 

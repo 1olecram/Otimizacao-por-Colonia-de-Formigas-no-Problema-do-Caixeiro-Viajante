@@ -31,7 +31,6 @@ def executar_aco_teste(qtd_formigas, taxa_evaporacao, matriz_distancias, max_ite
                 iteracao_convergencia = iteracao + 1
                 melhoria_nesta_iteracao = True
                 
-        # Atualiza o feromônio sem elitismo (apenas Q=100)
         matriz_feromonio = aco.atualiza_feromonio(matriz_feromonio, rotas_e_distancias, rho=taxa_evaporacao, Q=100.0)
         
         # Lógica de convergência: estabilizar por 50 iterações
