@@ -9,7 +9,7 @@ def main():
     matriz_distancias = aco.percorre_distancias()
     qtd_formigas = len(matriz_distancias) # Como há 20 cidades, teremos 20 formigas (uma em cada)
     
-    # Inicializa a matriz de feromônios com um pequeno valor positivo (ex: 1.0)
+    # Inicializa a matriz de feromônios com um valor inicial de 1.0 em todos os caminhos
     matriz_feromonio = [[1.0 for _ in range(qtd_formigas)] for _ in range(qtd_formigas)]
     
     melhor_rota_global = None
